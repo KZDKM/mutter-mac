@@ -22,19 +22,19 @@ URL:           http://www.gnome.org
 Source0:       http://download.gnome.org/sources/%{name}/45/%{name}-%{tarball_version}.tar.xz
 
 # Work-around for OpenJDK's compliance test
-Patch0:        0001-window-actor-Special-case-shaped-Java-windows.patch
+Patch:         0001-window-actor-Special-case-shaped-Java-windows.patch
 
 # https://bugzilla.redhat.com/show_bug.cgi?id=1936991
-Patch1:        mutter-42.alpha-disable-tegra.patch
+Patch:         mutter-42.alpha-disable-tegra.patch
 
 # https://pagure.io/fedora-workstation/issue/79
-Patch2:        0001-place-Always-center-initial-setup-fedora-welcome.patch
+Patch:         0001-place-Always-center-initial-setup-fedora-welcome.patch
 
 # https://gitlab.gnome.org/GNOME/mutter/-/merge_requests/3299
-Patch8:        3299.patch
+Patch:         3299.patch
 
 # https://gitlab.gnome.org/GNOME/mutter/-/merge_requests/3306
-Patch9:        3306.patch
+Patch:         3306.patch
 
 BuildRequires: pkgconfig(gobject-introspection-1.0) >= 1.41.0
 BuildRequires: pkgconfig(sm)
