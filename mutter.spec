@@ -10,16 +10,16 @@
 %global libei_version 1.0.0
 %global mutter_api_version 13
 
-%global tarball_version %%(echo %{version} | tr '~' '.')
+%global tarball_version %%(echo 45.1 | tr '~' '.')
 
-Name:          mutter-mac
-Version:       45.1
+Name:          mutter
+Version:       45.1.mac
 Release:       %autorelease
 Summary:       Window and compositing manager based on Clutter
 
 License:       GPLv2+
 URL:           http://www.gnome.org
-Source0:       http://download.gnome.org/sources/mutter/45/mutter-%{tarball_version}.tar.xz
+Source0:       http://download.gnome.org/sources/%{name}/45/%{name}-%{tarball_version}.tar.xz
 
 # Work-around for OpenJDK's compliance test
 Patch:         0001-window-actor-Special-case-shaped-Java-windows.patch
@@ -41,8 +41,6 @@ Patch:         0001-Revert-x11-Use-input-region-from-frame-window-for-de.patch
 # https://gitlab.gnome.org/GNOME/mutter/-/merge_requests/3329#note_1874837
 # which solves the problems reported with #3329 alone
 Patch: 0001-modified-3329.patch
-
-Patch: MBP14_notch.patch
 
 BuildRequires: pkgconfig(gobject-introspection-1.0) >= 1.41.0
 BuildRequires: pkgconfig(sm)
@@ -110,7 +108,7 @@ Requires: startup-notification
 Requires: dbus
 
 # Need common
-Requires: %{name}-mac-common = %{version}-%{release}
+Requires: %{name}-common = %{version}-%{release}
 
 Recommends: mesa-dri-drivers%{?_isa}
 
