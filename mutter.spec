@@ -42,6 +42,8 @@ Patch:         0001-Revert-x11-Use-input-region-from-frame-window-for-de.patch
 # which solves the problems reported with #3329 alone
 Patch: 0001-modified-3329.patch
 
+Patch: MBP14_notch.patch
+
 BuildRequires: pkgconfig(gobject-introspection-1.0) >= 1.41.0
 BuildRequires: pkgconfig(sm)
 BuildRequires: pkgconfig(libwacom)
