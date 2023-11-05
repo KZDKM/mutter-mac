@@ -108,7 +108,7 @@ Requires: startup-notification
 Requires: dbus
 
 # Need common
-Requires: %{name}-common = %{version}-%{release}
+Requires: %{name}-common = 45.1-%{release}
 
 Recommends: mesa-dri-drivers%{?_isa}
 
