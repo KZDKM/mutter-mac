@@ -12,7 +12,7 @@
 
 %global tarball_version %%(echo %{version} | tr '~' '.')
 
-Name:          mutter
+Name:          mutter-mac
 Version:       45.1
 Release:       %autorelease
 Summary:       Window and compositing manager based on Clutter
@@ -108,7 +108,7 @@ Requires: startup-notification
 Requires: dbus
 
 # Need common
-Requires: %{name}-common = %{version}-%{release}
+Requires: %{name}-mac-common = %{version}-%{release}
 
 Recommends: mesa-dri-drivers%{?_isa}
 
