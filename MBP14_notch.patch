@@ -6,8 +6,8 @@ index 3fd05a103..5ac514af8 100644
  
    monitor = info->entire_monitor;
  
-+  if (abs(monitor.width / monitor.width - 1.54f) < 0.01f) {//window->monitor->is_primary) {//monitor.width == 3024 && monitor.height == 1964) { 
-+    const float notch_y_ratio = 64.f / 1963.f;
++  if (abs(monitor.width / monitor.width - 1.54f) < 0.01f) {
++    const float notch_y_ratio = 64.f / 1964.f;
 +    int notch_padding_height = monitor.height * notch_y_ratio;
 +
 +    monitor.y += notch_padding_height;
